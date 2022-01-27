@@ -5,8 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 To build it locally, run:
 
-npm install
-npm start
+### npm install
+### npm start
 Then open localhost:3000 in a browser.
 
 The page will reload if you make edits.
