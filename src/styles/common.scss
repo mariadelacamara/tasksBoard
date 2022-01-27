@@ -1,0 +1,57 @@
+@import './variables.scss';
+
+.full-width {
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.align-center {
+  align-items: center;
+}
+
+%button {
+  display: flex;
+  align-items: center;
+  color: $white;
+  font-size: 12px;
+  font-weight: bold;
+  justify-content: center;
+  background-color: $dark-grey;
+  padding: 12px 40px;
+  white-space: nowrap;
+}
+
+.ok-button {
+  @extend %button;
+  &:hover {
+    background-color: $success;
+  }
+}
+
+.disabled {
+  background-color: $light-grey;
+  cursor: not-allowed;
+  &:hover {
+    background-color: $light-grey;
+  }
+}
+
+.cancel-button {
+  @extend %button;
+  &:hover {
+    background-color: $warning;
+  }
+}

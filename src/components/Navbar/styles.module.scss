@@ -1,0 +1,34 @@
+@import '../../styles/variables.scss';
+
+.navbar {
+  background: linear-gradient(
+    90deg,
+    rgb(110, 94, 254) 0%,
+    rgba(73, 63, 252, 1) 100%
+  );
+  font-size: 20px;
+  height: $navbar-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.text {
+  color: #fff;
+}
+
+@media screen and (max-width: $medium-screen) {
+  .text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .navbar {
+    height: $navbar-responsive-height;
+  }
+  .text {
+    font-size: 12px;
+  }
+}
